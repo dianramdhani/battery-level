@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* battery */
+      .battery::after {
+        border-radius: 0 4px 4px 0;
+        border: 2px solid green;
+        background-color: green;
+        content: "";
+        display: block;
+        height: 14px;
+        position: absolute;
+        right: -10px;
+        top: 9px;
+        width: 6px;
+      }
+      .battery {
+        border: 2px solid green;
+        border-radius: 5px;
+        display: inline-block;
+        height: 32px;
+        position: relative;
+        padding: 2px;
+        margin-right: 7px;
+        width: 100px;
+        zoom: 2;
+      }
+
+      .battery .level {
+        background-color: green;
+        border-radius: 2.5px;
+        height: 100%;
+        width: 50%;
+      }
+
+      /* battery2 */
+      .battery2::after {
+        border-radius: 0 0 4px 4px;
+        border: 2px solid green;
+        background-color: green;
+        content: "";
+        display: block;
+        height: 6px;
+        left: 9px;
+        position: absolute;
+        bottom: -10px;
+        width: 14px;
+      }
+      .battery2 {
+        border: 2px solid green;
+        border-radius: 5px;
+        display: inline-block;
+        height: 100px;
+        position: relative;
+        padding: 2px;
+        margin-top: 7px;
+        transform: rotate(180deg);
+        width: 32px;
+        zoom: 2;
+      }
+
+      .battery2 .level2 {
+        background-color: green;
+        border-radius: 2.5px;
+        height: 70%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="battery">
+      <div class="level"></div>
+    </div>
+
+    <div class="battery2">
+      <div class="level2"></div>
+    </div>
+  </body>
+</html>
